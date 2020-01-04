@@ -90,6 +90,3 @@ $ ./easycom /dev/ttyUSB0 --timeout=10 --parity=Odd
 ## 如何贡献
 
 我不配
-
-
-标准 Readme 遵循 [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) 行为规范.
