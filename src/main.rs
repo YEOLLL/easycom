@@ -94,10 +94,10 @@ fn main() {
                 .expect("未知的flow_control，请使用[None, Software, Hardware]中的一个"),
 
             parity: str_to_parity(matches.value_of("parity").unwrap())
-                .expect("未知的parity，请使用[None, Odd, Even]"),
+                .expect("未知的parity，请使用[None, Odd, Even]中的一个"),
 
             stop_bits: str_to_stop_bits(matches.value_of("stop_bits").unwrap())
-                .expect("未知的stop_bits，请使用[1, 2]"),
+                .expect("未知的stop_bits，请使用[1, 2]中的一个"),
 
             timeout: Duration::from_millis(matches.value_of("timeout").unwrap().parse::<u64>()
                 .expect("未知的timeout，请确认是否输入正确")),
